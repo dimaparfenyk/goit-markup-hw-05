@@ -491,7 +491,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   transition-property: background-color, color, box-shadow;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: none;
   background-color: #f5f4fa;
@@ -528,6 +528,12 @@ a {
 .company-projects:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
+.company-projects {
+  box-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .company-projects:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -536,4 +542,40 @@ a {
   border: 1px solid var(--card-border-color);
   border-top: none;
   padding: 20px 24px;
+}
+
+.overlay-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 63px 24px;
+  font-style: normal;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.project-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.company-projects:hover .project-overlay,
+.company-projects:focus .project-overlay {
+  transform: translateY(0%);
 }
