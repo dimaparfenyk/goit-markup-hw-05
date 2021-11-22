@@ -86,6 +86,9 @@ a {
   color: var(--primary-title-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link::after {
   content: '';
@@ -103,7 +106,6 @@ a {
 .nav-link:hover::after,
 .nav-link:focus::after {
   transform: scaleX(1);
-  /* background-color: rgba(33, 150, 243, 1); */
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -124,10 +126,18 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+.contacts-item {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-item:hover,
 .contacts-item:focus {
@@ -165,7 +175,7 @@ a {
   border: none;
   min-width: 200px;
 
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--main-text-color);
 
@@ -174,6 +184,9 @@ a {
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -334,6 +347,9 @@ a {
   width: 100%;
   height: 100%;
   color: var(--color-item);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -369,11 +385,15 @@ a {
   width: 100%;
   height: 100%;
   color: var(--color-item);
+  border: 1px solid rgba(33, 150, 243, 0);
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border: 1px solid rgba(33, 150, 243, 1);
 }
 .clients-logo {
   fill: currentColor;
@@ -407,6 +427,11 @@ a {
   width: 100%;
   height: 100%;
   color: #fff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -465,11 +490,16 @@ a {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: none;
+  background-color: #f5f4fa;
   color: var(--primary-title-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--main-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
