@@ -65,5 +65,8 @@
 <symbol id="icon-hover-overlay" viewBox="0 0 40 32">
 <path fill="#2196f3" style="fill: var(--color1, #2196f3)" opacity="0.9" d="M0 0h40.272v32h-40.272v-32z"></path>
 </symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+</symbol>
 </defs>
 </svg>
